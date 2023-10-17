@@ -16,7 +16,7 @@ app.listen(PORT, ()=>{
 
 
 app.get("/", (req,res)=>{
-	res.redirect("/login")
+	res.sendFile(path.join(__dirname, "views", "login.html"));
 })
 
 app.get("/login", (req,res)=>{
