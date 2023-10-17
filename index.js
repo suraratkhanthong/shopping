@@ -20,23 +20,22 @@ app.get("/", (req,res)=>{
 })
 
 app.get("/login", (req,res)=>{
-	res.sendFile(__dirname+"/public/src/temp/login.html");
+	res.sendFile(path.join(__dirname, "views", "login.html"));
 })
 app.get("/dashboard", (req,res)=>{
-	res.sendFile(__dirname+"/public/src/temp/dashboard.html");
+	res.sendFile(path.join(__dirname, "views", "dashboard.html"));
 })
 app.get("/order", (req,res)=>{
-	res.sendFile(__dirname+"/public/src/temp/order.html");
+	res.sendFile(path.join(__dirname, "views", "order.html"));
 })
 app.get("/appointment", (req,res)=>{
-	res.sendFile(__dirname+"/public/src/temp/appointment.html");
+	res.sendFile(path.join(__dirname, "views", "appointment.html"));
 })
 app.get("/daily-sales", (req,res)=>{
-	res.sendFile(__dirname+"/public/src/temp/daily-sales.html");
+	res.sendFile(path.join(__dirname, "views", "daily-sales.html"));
 })
-
 app.get("/faq", (req,res)=>{
-	res.sendFile(__dirname+"/public/src/temp/faq.html");
+	res.sendFile(path.join(__dirname, "views", "faq.html"));
 })
 
 
